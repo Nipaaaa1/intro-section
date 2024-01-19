@@ -1,25 +1,25 @@
+import HeroDesktop from "/images/image-hero-desktop.png";
+import Logo from "/images/logo.svg";
+import ArrowDown from "/images/icon-arrow-down.svg";
+import Audiophile from "/images/client-audiophile.svg";
+import Databiz from "/images/client-databiz.svg";
+import Maker from "/images/client-maker.svg";
+import Meet from "/images/client-meet.svg";
+
 function App() {
   return (
-    <main className="h-svh w-full bg-almostWhite px-10 py-6 font-epilogue">
-      <nav className="flex items-center justify-between">
+    <main className="flex h-svh w-full flex-col bg-almostWhite px-10 py-6 font-epilogue">
+      <nav className="flex w-full items-center justify-between">
         <div className="flex text-mediumGray">
-          <img className="mr-16" src="/images/logo.svg" alt="Logo" />
+          <img className="mr-16" src={Logo} alt="Logo" />
           <ul className="flex items-center gap-10">
             <li className="flex items-center gap-2">
               Features
-              <img
-                className="h-full w-max"
-                src="/images/icon-arrow-down.svg"
-                alt="Arrow Down"
-              />
+              <img className="h-full w-max" src={ArrowDown} alt="Arrow Down" />
             </li>
             <li className="flex items-center gap-2">
               Company
-              <img
-                className="h-full w-max"
-                src="/images/icon-arrow-down.svg"
-                alt="Arrow Down"
-              />
+              <img className="h-full w-max" src={ArrowDown} alt="Arrow Down" />
             </li>
             <li>Carrers</li>
             <li>About</li>
@@ -37,24 +37,36 @@ function App() {
           </a>
         </div>
       </nav>
-      <section>
-        <div>
-          <div>
-            <h1>Make remote work</h1>
-            <p>
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
+      <section className="flex h-full items-center pl-24 pr-20">
+        <div className="flex h-full w-full flex-col justify-between">
+          <div className="flex translate-x-10 translate-y-48 flex-col gap-14">
+            <h1 className="text-8xl font-bold text-almostBlack">
+              Make
+              <br />
+              remote work
+            </h1>
+            <p className="text-xl text-mediumGray">
+              Get your team in sync, no matter your location.
+              <br />
+              Streamline processes, create team rituals, and
+              <br />
+              watch productivity soar.
             </p>
-            <a href="#">Learn More</a>
+            <a
+              className="w-max rounded-xl bg-almostBlack px-8 py-4 text-xl text-almostWhite"
+              href="#"
+            >
+              Learn More
+            </a>
           </div>
-          <div>
-            <img src="/images/client-databiz.svg" alt="Databiz" />
-            <img src="/images/client-audiophile.svg" alt="Audiophile" />
-            <img src="/images/client-meet.svg" alt="Meet" />
-            <img src="/images/client-maker.svg" alt="Maker" />
+          <div className="flex -translate-y-20 translate-x-10 items-center gap-8">
+            <img className="h-2/3 w-max" src={Databiz} alt="Databiz" />
+            <img className="h-3.4 w-max" src={Audiophile} alt="Audiophle" />
+            <img className="h-2/3 w-max" src={Meet} alt="Meet" />
+            <img className="h-2/3 w-max" src={Maker} alt="Maker" />
           </div>
         </div>
-        <img src="/images/image-hero-desktop.png" alt="Hero" />
+        <img className="h-max w-2/6" src={HeroDesktop} alt="Desktop Herp" />
       </section>
     </main>
   );
