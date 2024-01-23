@@ -11,6 +11,9 @@ export default {
       fontFamily: {
         epilogue: ["Epilogue", "sans-serif"],
       },
+      backgroundImage: {
+        heroDesktop: "url('/images/image-hero-desktop.png')",
+      },
     },
   },
   plugins: [],
