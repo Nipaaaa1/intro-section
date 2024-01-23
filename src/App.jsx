@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="flex h-svh w-full flex-col bg-almostWhite font-epilogue md:px-10 md:py-6">
       <Navigation />
-      <div className="bg-heroMobile h-2/3 w-full bg-contain bg-center bg-no-repeat md:hidden" />
+      <div className="h-2/3 w-full bg-heroMobile bg-contain bg-center bg-no-repeat md:hidden" />
       <section className="flex h-full flex-col items-center md:ml-24 md:mr-20 md:flex-row md:p-16">
         <div className="flex size-full flex-col items-center gap-10 px-5 pt-5 text-center md:items-start md:px-0 md:pt-36 md:text-left">
           <h1 className="w-full text-3xl font-semibold md:w-[70%] md:text-8xl">
@@ -19,7 +19,7 @@ function App() {
             processes, create team rituals, and watch productivity soar.
           </p>
           <a
-            className="w-max rounded-xl bg-almostBlack px-6 py-3 text-sm text-almostWhite md:px-10 md:py-4 md:text-xl"
+            className="w-max rounded-xl bg-almostBlack px-6 py-3 text-sm text-almostWhite transition ease-in-out hover:bg-transparent hover:text-almostBlack hover:ring-2 hover:ring-almostBlack md:px-10 md:py-4 md:text-xl"
             href="#"
           >
             Learn More
@@ -35,7 +35,7 @@ function App() {
             <img className="h-4/5 w-max md:h-max" src={Maker} alt="Maker" />
           </div>
         </div>
-        <div className="bg-heroDesktop hidden h-full w-2/3 bg-contain bg-right bg-no-repeat md:block" />
+        <div className="hidden h-full w-2/3 bg-heroDesktop bg-contain bg-right bg-no-repeat md:block" />
       </section>
     </main>
   );
