@@ -13,6 +13,7 @@ export default {
       },
       backgroundImage: {
         heroDesktop: "url('/images/image-hero-desktop.png')",
+        heroMobile: "url('/images/image-hero-mobile.png')",
       },
     },
   },

@@ -3,9 +3,9 @@ import ArrowDown from "/images/icon-arrow-down.svg";
 
 const Navigation = () => {
   return (
-    <nav className="flex w-full items-center justify-between">
-      <div className="flex text-mediumGray">
-        <img className="mr-16" src={Logo} alt="Logo" />
+    <nav className="flex w-full items-center p-5">
+      <img className="mr-16 h-full w-max" src={Logo} alt="Logo" />
+      <div className="hidden text-mediumGray md:flex">
         <ul className="flex items-center gap-10">
           <li className="flex items-center gap-2">
             Features
@@ -19,7 +19,7 @@ const Navigation = () => {
           <li>About</li>
         </ul>
       </div>
-      <div className="flex items-center gap-10">
+      <div className="ml-auto hidden items-center gap-10 md:flex">
         <a className="text-mediumGray" href="#">
           Login
         </a>
@@ -29,6 +29,11 @@ const Navigation = () => {
         >
           Register
         </a>
+      </div>
+      <div className="ml-auto flex h-8 w-12 flex-col justify-between p-1 md:hidden">
+        <span className="h-1 w-full rounded-full bg-almostBlack" />
+        <span className="h-1 w-full rounded-full bg-almostBlack" />
+        <span className="h-1 w-full rounded-full bg-almostBlack" />
       </div>
     </nav>
   );
